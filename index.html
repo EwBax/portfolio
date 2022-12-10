@@ -5,74 +5,104 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hind:regular,bold">
   <link rel="stylesheet" href="./scss/bootstrap-custom.css">
   <title>Ewan Baxter</title>
 </head>
 
-<body class="bg-primary h-100">
+<body  class="bg-light">
 
   <header class="bg-dark">
-    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
+      <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+          <li class="nav-item active">
+            <button type="button" class="btn btn-outline-light m-2">Portfolio</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Resumé</a>
+            <button type="button" class="btn btn-outline-light m-2">Resumé</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <button type="button" class="btn btn-outline-light m-2">Skills</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <button type="button" class="btn btn-outline-light m-2">Portfolio</button>
           </li>
+        </ul>
       </div>
     </nav>
   </header>
 
-  <main>
-    <div class="container">
 
-      <div class="row">
-        <div class="col-md-3">
-          <img src="./images/ewan.jpg" alt="Photo of Ewan" class="rounded-circle border border-secondary">
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <p>Hi!</p>
-          </div>
-          <div class="row">
-            <h1>I'm Ewan Baxter</h1>
-          </div>
-          <div class="row">
-            <h2>I build software and applications.</h2>
-          </div>
-          <div class="row">
-            <p>Please take a look around my site and check out the projects I have worked on!</p>
-            <p>Looking to hire me? Get in touch with the button below.</p>
-          </div>
-        </div>
-      </div>
+  <main role="main" class="flex-shrink-0">
 
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <button type="button" class="btn btn-outline-dark" id="contactButton"><h3>Contact Me!</h3></button>
+
+    <div class="h-100 d-flex align-items-center mt-5 pt-5">
+      <div class="container h-50">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center">
+              <img src="./images/ewan.jpg" alt="Photo of Ewan" class="rounded-circle border border-primary flex-shrink-1" width="90%">
+            </div>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <div class="row">
+              <p>Hi!</p>
+            </div>
+            <div class="row">
+              <h1>I'm Ewan Baxter</h1>
+            </div>
+            <div class="row">
+              <h2>I build software and applications.</h2>
+            </div>
+            <div class="row">
+              <p>Please take a look around my site and check out the projects I have worked on!</p>
+              <p>Looking to hire me? Get in touch with the button below.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row m-5 justify-content-center">
+          <div class="col-md-3 d-flex justify-content-center">
+            <button type="button" class="btn btn-lg btn-outline-dark p-3 flex-fill" id="contact-button"><b class="lg">Contact Me</b></button>
+          </div>
+        </div>
+
+        <div class="row m-5 justify-content-center">
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-12 d-flex justify-content-center">
+                <p>Not sold yet?</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 d-flex justify-content-center">
+                <button type="button" class="btn btn btn-outline-dark" id="see-work-button"><b>See My Work</b></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   </main>
 
-  <footer class="container">
-    Footer
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
   </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
+
 
 </html>

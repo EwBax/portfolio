@@ -3,10 +3,18 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin");
+@import url("http://fonts.googleapis.com/css?family=Hind:regular,bold");
+
 $dark: #4A4063;
-$primary: #BFACC8;
+$body-color: $dark;
+$light: #BFACC8;
+$primary: #4F1271;
 $secondary: #783F8E;
 $border-radius: 0;
+$enable-rounded: false;
+
+$font-family-base: Ubuntu, sans-serif !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -14,12 +22,52 @@ $border-radius: 0;
 
 // Then add additional custom code here
 
-html {
+html, body {
     height: 100%;
 }
 
-#contactButton {
+h1 {
+
+    color: $primary;
+
+}
+
+h1, h2 {
+
+    font-family: Hind, sans-serif;
+    font-weight: bold;
+
+}
+
+#contact-button, #see-work-button {
 
     box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.45);
+    background-color: #C8C6D7;
+    border-color: $primary;
+    border-width: 2px;
     
 }
+
+#contact-button:hover, #see-work-button:hover {
+
+    color: $primary;
+    
+}
+
+
+#contact-button {
+
+    font-size: 1.5rem;
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+    
+    .container {
+
+        max-width: 1640px;
+
+    }
+
+  }
