@@ -12,7 +12,8 @@ $light: #BFACC8;
 $primary: #4F1271;
 $secondary: #783F8E;
 $border-radius: 0;
-$enable-rounded: false;
+$enable-rounded: true;
+$enable-gradients: false;
 
 $font-family-base: Ubuntu, sans-serif !default;
 
@@ -22,52 +23,143 @@ $font-family-base: Ubuntu, sans-serif !default;
 
 // Then add additional custom code here
 
-html, body {
+html,
+body {
     height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: conic-gradient(from 270deg at 0 100%, #C8C6D7, #783F8E);
 }
 
 h1 {
 
     color: $primary;
+    font-size: 3.125rem;
 
 }
 
-h1, h2 {
+
+h1,
+h2 {
 
     font-family: Hind, sans-serif;
     font-weight: bold;
 
 }
 
-#contact-button, #see-work-button {
+h2 {
+    font-size: 2.5rem;
 
-    box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.45);
-    background-color: #C8C6D7;
-    border-color: $primary;
-    border-width: 2px;
-    
 }
 
-#contact-button:hover, #see-work-button:hover {
+button.nav-btn {
+    font-size: 1.25rem;
+}
+
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+footer {
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.notable-projects {
+    text-align: center;
+}
+
+.project-box {
+    border-radius: 10%;
+    border: 1px solid #707070;
+    background: linear-gradient(45deg, $secondary, $dark, $secondary);
+    box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.45);
+}
+
+.project-title {
+    color: #C8C6D7;
+}
+
+.project-image {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.project-technologies {
+    font-style: italic;
+    font-size: 1.125rem;
+    color: $light;
+}
+
+#hi {
+    font-size: 1.875rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+#contact-button,
+#see-work-button {
+
+    box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.45);
+    background-color: #BFACC8;
+    border-color: $primary;
+    border-width: 2px;
+    border-radius: 0;
+
+}
+
+#contact-button:hover,
+#see-work-button:hover {
 
     color: $primary;
-    
+    background-color: $secondary;
+
 }
 
 
 #contact-button {
 
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 
 }
 
+#see-work-button {
+    font-size: 1.375rem;
+
+}
+
+#gitHub,
+#linkedIn {
+
+    max-width: 52px;
+}
+
+#horizontalLine {
+    height: 129px;
+    width: 1px;
+    border-left: 1px solid black;
+    margin-left: 26px;
+}
+
+#ewanPic {
+    width: 100%;
+}
 
 @media only screen and (min-width: 1400px) {
-    
+
     .container {
 
         max-width: 1640px;
 
     }
 
-  }
+}

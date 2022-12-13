@@ -11,7 +11,7 @@
   <title>Ewan Baxter</title>
 </head>
 
-<body  class="bg-light">
+<body class="bg-light">
 
   <header class="bg-dark">
     <nav class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
@@ -23,16 +23,17 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <button type="button" class="btn btn-outline-light m-2">Portfolio</button>
+            <a href="html/portfolio.html"><button type="button"
+                class="btn btn-outline-light m-2 nav-btn">Portfolio</button></a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light m-2">Resumé</button>
+            <button type="button" class="btn btn-outline-light m-2 nav-btn">Resumé</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light m-2">Skills</button>
+            <button type="button" class="btn btn-outline-light m-2 nav-btn">Skills</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light m-2">Portfolio</button>
+            <button type="button" class="btn btn-outline-light m-2 nav-btn">Contact</button>
           </li>
         </ul>
       </div>
@@ -47,13 +48,14 @@
       <div class="container h-50">
         <div class="row">
           <div class="col-md-3">
-            <div class="d-flex justify-content-center">
-              <img src="./images/ewan.jpg" alt="Photo of Ewan" class="rounded-circle border border-primary flex-shrink-1" width="90%">
+            <div class="d-flex">
+              <img src="./images/ewan.jpg" alt="Photo of Ewan"
+                class="rounded-circle border border-primary flex-shrink-1" id="ewanPic">
             </div>
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="col-md-8 mx-5 d-flex flex-column justify-content-center px-4">
             <div class="row">
-              <p>Hi!</p>
+              <p id="hi" class="pt-4">Hi!</p>
             </div>
             <div class="row">
               <h1>I'm Ewan Baxter</h1>
@@ -67,14 +69,17 @@
             </div>
           </div>
         </div>
-        <div class="row m-5 justify-content-center">
+        <div class="row mt-5 justify-content-center">
           <div class="col-md-3 d-flex justify-content-center">
-            <button type="button" class="btn btn-lg btn-outline-dark p-3 flex-fill" id="contact-button"><b class="lg">Contact Me</b></button>
+            <a href="mailto:ewan@toughbaxter.com" class="w-100">
+              <button type="button" class="btn btn-outline-dark p-3 w-100" id="contact-button"><b class="lg">Contact
+                  Me</b></button>
+            </a>
           </div>
         </div>
 
-        <div class="row m-5 justify-content-center">
-          <div class="col-md-3">
+        <div class="row my-4 justify-content-center">
+          <div class="col-md-4">
             <div class="row">
               <div class="col-md-12 d-flex justify-content-center">
                 <p>Not sold yet?</p>
@@ -82,7 +87,8 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6 d-flex justify-content-center">
-                <button type="button" class="btn btn btn-outline-dark" id="see-work-button"><b>See My Work</b></button>
+                <a href="html/portfolio.html"><button type="button" class="btn btn btn-outline-dark"
+                    id="see-work-button"><b>See My Work</b></button></a>
               </div>
             </div>
           </div>
@@ -92,9 +98,26 @@
 
   </main>
 
-  <footer class="footer mt-auto py-3">
+  <footer class="footer">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="d-flex flex-column justify-content-end">
+            <a href="https://www.linkedin.com/in/ewanbaxter/"><img src="images/linkedin.png" alt="LinkedIn logo"
+                id="linkedIn" class="my-1"></a>
+            <a href="https://github.com/EwBax"><img src="images/github-sign.png" alt="GitHub logo" id="gitHub"
+                class="my-1"></a>
+            <div id="horizontalLine"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column h-100 justify-content-end align-items-center">
+            <span>Designed & built by Ewan Baxter</span>
+            <span><a href="mailto:ewan@toughbaxter.com">ewan@toughbaxter.com</a></span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </footer>
 
