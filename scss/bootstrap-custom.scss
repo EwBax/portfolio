@@ -67,11 +67,8 @@ p {
     margin-bottom: 0;
 }
 
-footer {
+footer.footer.fixed-bottom  {
     font-size: 0.875rem;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
 }
 
 .notable-projects {
