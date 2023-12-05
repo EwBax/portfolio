@@ -1,11 +1,8 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
-
 // Include any default variable overrides here (though functions won't be available)
-
 @import url("http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin");
 @import url("http://fonts.googleapis.com/css?family=Hind:regular,bold");
-
 $dark: #4A4063;
 $body-color: $dark;
 $light: #BFACC8;
@@ -14,15 +11,10 @@ $secondary: #783F8E;
 $border-radius: 0;
 $enable-rounded: true;
 $enable-gradients: false;
-
-$font-family-base: Ubuntu, sans-serif !default;
-
+$font-family-base: Ubuntu,
+sans-serif !default;
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-
-
 // Then add additional custom code here
-
 html {
     min-height: 100vh;
     width: 100vw;
@@ -41,30 +33,23 @@ body {
 }
 
 h1 {
-
     color: $primary;
     font-size: 3.125rem;
-
 }
-
 
 h1,
 h2 {
-
     font-family: Hind, sans-serif;
     font-weight: bold;
-
 }
 
 h2 {
     font-size: 2.5rem;
-
 }
 
 button.nav-btn {
     font-size: 1.25rem;
 }
-
 
 p {
     font-size: 1.25rem;
@@ -103,12 +88,12 @@ p {
     padding-top: 2rem;
 }
 
-.project-write-up > h1 {
+.project-write-up>h1 {
     text-align: center;
     margin-top: 2rem;
 }
 
-.project-write-up > h2 {
+.project-write-up>h2 {
     margin: 2rem 0;
 }
 
@@ -127,17 +112,12 @@ p {
 }
 
 .main-btn:hover {
-
     color: $primary;
     background-color: $secondary;
-
 }
 
-
 #contact-button {
-
     font-size: 2.5rem;
-
 }
 
 #see-work-button {
@@ -147,17 +127,18 @@ p {
 
 #gitHub,
 #linkedIn {
-
     max-width: 52px;
     margin: 10px;
 }
-
 
 // #git-link,
 // #linkedin-link {
 //     width: fit-content;
 // }
-
+// #git-link,
+// #linkedin-link {
+//     width: fit-content;
+// }
 #horizontalLine {
     height: 129px;
     width: 1px;
@@ -170,11 +151,7 @@ p {
 }
 
 @media only screen and (min-width: 1400px) {
-
     .container {
-
         max-width: 1640px;
-
     }
-
 }
