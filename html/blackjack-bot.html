@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hind:regular,bold">
+    <link rel="stylesheet" href="../scss/bootstrap-custom.css">
+    <title>Ewan Baxter - Project Template</title>
+</head>
+
+<body class="bg-light">
+
+    <header class="bg-dark">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
+            <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html"><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Home</button></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./portfolio.html"><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Portfolio</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../files/EwanBaxter_Resume.pdf" download><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Resumé</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="flex-shrink-0">
+        <div class="container project-write-up">
+            <h1>Discord Blackjack Bot</h1>
+            <a href="https://github.com/EwBax/discord-gambling-bot" class="text-center d-block">
+                <button type="button" class="main-btn btn btn-outline-dark p-1"><b> GitHub Repository</b></button>
+            </a>
+            <div class="row">
+                <div class="col-md-10 project-write-up">
+                    <h2>Description</h2>
+                    <article>
+                        <p>A Discord bot written with GO, that allows users to play blackjack one-on-one against the bot. Players area given a starting sum of chips, and are able to wager chips on each game against the bot. Players can never drop below one
+                            chip, so they are always able to continue playing. The bot tracks stats on the players so they can view their wins, losses, ties, and total chips.</p>
+                        <br>
+                        <p>This project was developed as a way to learn the programming language GO, as well as learning to develop a bot for Discord. Uses Discord application commands and button components to play.</p>
+                    </article>
+                </div>
+                <div class="col-md-2">
+                    <img src="../images/hit_stand.png" class="img-fluid my-5 border border-primary">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/results.png" class="img-fluid my-5">
+                </div>
+                <div class="col-md-8">
+                    <h2>Development Process</h2>
+                    <article>
+                        <p>I began the development process by learning the programming language GO. I was brand new to GO and did not have any prior knowledge of the language. I chose to first follow Google's tutorial called
+                            <a href="https://go.dev/tour/welcome/1">"A Tour of GO"</a>, which gives a quick run-down of all of the major features of GO. This tutorial does include some exercises, but I found that I required more hands-on experience with
+                            the language to really learn it.
+                        </p>
+                        <br>
+                        <p>This lead me to the website Exercism, where I followed their <a href="https://exercism.org/tracks/go">GO learning track</a>. This served as an excellent way to reinforce the concepts I learned in A Tour of GO with a variety of
+                            hands-on exercises using each core concept.</p>
+                        <br>
+                        <p>Once I was confident in my ability to code with GO, I began researching programming a Discord bot. I found a great library for GO that acts as a wrapper for the Discord API, called <a href="https://github.com/bwmarrin/discordgo">discordgo</a>.
+                            GO is not one of the popular lanugages used to develop Discord Bots, so there were not a lot of resources available to learn how to use the library. Fortunately, the developer of the library included detailed examples in the
+                            repository that demonstrate how to use the library.</p>
+                        <br>
+                        <p>The development process of the bot was iterative. The first iteration was simply the core gameplay, done through text messages in Discord. Each subsequent iteration improved the user experience, the gameplay, and the structure
+                            of the code. I began exploring more of the Discord API and finding cool features that I wanted to implement in my game. I reworked the bot to use Discord Application Commands, as well as buttons, to improve the experience for
+                            the user.</p>
+                    </article>
+                </div>
+            </div>
+            <h2>Reflections</h2>
+            <p>
+                This project was very enjoyable to work on. I loved seeing the improvements between each iteration of the project, and my skills with both GO and the discordgo library improving as the project was developed. I plan to continue working on this project
+                in the future and add more features, such as additional casino and card games. Also, now that I am able to create applications in Discord, next time I think of a good idea for one I will be able to create it myself!
+            </p>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="d-flex flex-row justify-content-center">
+                        <a href="https://www.linkedin.com/in/ewanbaxter/" id="linkedin-link"><img src="../images/linkedin.png" alt="LinkedIn logo" id="linkedIn" class="my-1"></a>
+                        <a href="https://github.com/EwBax" id="git-link"><img src="../images/github-sign.png" alt="GitHub logo" id="gitHub" class="my-1"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column h-100 justify-content-end align-items-center">
+                        <span>Designed & built by Ewan Baxter</span>
+                        <span><a href="mailto:ewan@toughbaxter.com">ewan@toughbaxter.com</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

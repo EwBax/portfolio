@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hind:regular,bold">
+    <link rel="stylesheet" href="../scss/bootstrap-custom.css">
+    <title>Ewan Baxter - Project Template</title>
+</head>
+
+<body class="bg-light">
+
+    <header class="bg-dark">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
+            <button class="navbar-toggler m-2" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html"><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Home</button></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./portfolio.html"><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Portfolio</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../files/EwanBaxter_Resume.pdf" download><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Resumé</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="flex-shrink-0">
+        <div class="container project-write-up">
+            <h1>Cruddy Pizza</h1>
+            <a href="https://github.com/EwBax/CruddyPizza" class="text-center d-block">
+                <button type="button" class="main-btn btn btn-outline-dark p-1"><b> GitHub Repository</b></button>
+            </a>
+
+            <div class="row">
+                <div class="col-lg-9 project-write-up">
+                    <h2>Description</h2>
+                    <article>
+                        <p>An Android application that is a mock ordering system for a Pizza restaurant. Orders created are
+                            saved to a SQLite database, and all saved orders can be viewed and updated/deleted from within the
+                            appliation. The application can also switch between English and French the fly, and remembers the
+                            language selection.</p>
+                        <br>
+                        <p>This application was a school assignment to practice using Android Shared Preferences, and performing
+                            <i>CRUD</i> (Create Read Update Delete) operations with a database. The program was written with
+                            Java and developed using Android Studio.
+                        </p>
+                    </article>
+                    <h2>Development Process</h2>
+                    <article>
+                        <p>This assignment was part of my Android development course, and was the final assignment of the
+                            course. Before this point in the course, I had already developed a calculator app and a quiz app,
+                            but had not made an application with navigation back and forth between pages (activities). This
+                            didn't end up being the tricky part of the assignment, though; that would be the translation between
+                            English and French at the push of a button in the app.</p>
+                        <br>
+                        <p>I built the language switching functionality using the built in localization functionality in
+                            Android. Android's Localization will choose which resource
+                            dictionary to use for text in the app based on the locale of the device using the app. I programmed
+                            the button to switch the app to use the
+                            French locale resources and reload the current page, but for some reason it would still display
+                            English. I spent some time researching and testing possible solutions to my problem, but in the end
+                            the best approach I found was to have a function that manually sets all the text on the page with
+                            the new locale's resources.</p>
+                        <br>
+                        <p>To handle the CRUD operations in the app, I wrote a java database adapter and an order model to store
+                            the data for individual orders. To display the order history I used a custom XML control for each
+                            row displayed in a RecyclerView.</p>
+                    </article>
+                </div>
+                <div class="col-lg-3">
+                    <img src="../images/cruddy_pizza_2.jpg" class="img-fluid project-img">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="../images/cruddy_pizza_3.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-9">
+                    <h2>Reflections</h2>
+                    <article>
+                        <p>This application was interesting to make. It wasn't particularly enjoyable, I think because it's just
+                            a mock app, but it was educational. I improved my skills developing Android applications during this
+                            project, and got expecience using databases and stored preferences to remember data from the apps.
+                            After developing this application, I now feel like I have the ability to develop any app that I have
+                            an idea for.
+                        </p>
+                        <br>
+                        <p>One of the reasons this course was my favorite is because I was able to load the apps I made onto my
+                            phone and show anybody! Before this, all of the applications I had made required a computer to use,
+                            and most of them were command line based. Having the Android apps I developed installed on my phone
+                            made it much easier to show people, and the apps themselves felt like a better display of my skills
+                            than most of my previous school projects. Once I have more free time in my life, I want to revisit
+                            Android development and make an app I will enjoy working on.
+                        </p>
+                    </article>
+                </div>
+            </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="d-flex flex-row justify-content-center">
+                        <a href="https://www.linkedin.com/in/ewanbaxter/" id="linkedin-link"><img
+                                src="../images/linkedin.png" alt="LinkedIn logo" id="linkedIn" class="my-1"></a>
+                        <a href="https://github.com/EwBax" id="git-link"><img src="../images/github-sign.png"
+                                alt="GitHub logo" id="gitHub" class="my-1"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column h-100 justify-content-end align-items-center">
+                        <span>Designed & built by Ewan Baxter</span>
+                        <span><a href="mailto:ewan@toughbaxter.com">ewan@toughbaxter.com</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

@@ -23,9 +23,9 @@ $font-family-base: Ubuntu, sans-serif !default;
 
 // Then add additional custom code here
 
-html,
-body {
-    height: 100%;
+html {
+    min-height: 100vh;
+    width: 100vw;
 }
 
 html {
@@ -33,7 +33,11 @@ html {
 }
 
 body {
+    min-height: 100vh;
+    width: 100%;
     background: conic-gradient(from 270deg at 0 100%, #C8C6D7, #783F8E);
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -67,13 +71,6 @@ p {
     margin-bottom: 0;
 }
 
-footer {
-    font-size: 0.875rem;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-}
-
 .notable-projects {
     text-align: center;
 }
@@ -100,25 +97,36 @@ footer {
     color: $light;
 }
 
+.footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 2rem;
+}
+
+.project-write-up > h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.project-write-up > h2 {
+    margin: 2rem 0;
+}
+
 #hi {
     font-size: 1.875rem;
     margin-top: 1rem;
     margin-bottom: 0;
 }
 
-#contact-button,
-#see-work-button {
-
+.main-btn {
     box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.45);
     background-color: #BFACC8;
     border-color: $primary;
     border-width: 2px;
     border-radius: 0;
-
 }
 
-#contact-button:hover,
-#see-work-button:hover {
+.main-btn:hover {
 
     color: $primary;
     background-color: $secondary;
@@ -134,14 +142,21 @@ footer {
 
 #see-work-button {
     font-size: 1.375rem;
-
+    margin-bottom: 30px;
 }
 
 #gitHub,
 #linkedIn {
 
     max-width: 52px;
+    margin: 10px;
 }
+
+
+// #git-link,
+// #linkedin-link {
+//     width: fit-content;
+// }
 
 #horizontalLine {
     height: 129px;

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hind:regular,bold">
+    <link rel="stylesheet" href="../scss/bootstrap-custom.css">
+    <title>Ewan Baxter - Project Template</title>
+</head>
+
+<body class="bg-light">
+
+    <header class="bg-dark">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
+            <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html"><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Home</button></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./portfolio.html"><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Portfolio</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../files/EwanBaxter_Resume.pdf" download><button type="button"
+                                class="btn btn-outline-light m-2 nav-btn">Resumé</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="flex-shrink-0">
+        <div class="container project-write-up">
+            <h1>Rogue Planet</h1>
+            <a href="https://github.com/gumgaard-dev/rogue-planet" class="text-center d-block">
+                <button type="button" class="main-btn btn btn-outline-dark p-1"><b> GitHub Repository</b></button>
+            </a>
+            <div class="row">
+                <div class="col-md-8 project-write-up">
+                    <h2>Description</h2>
+                    <article>
+                        <p>Rogue Planet is a game demonstrating the harsh reality of surviving a crash-landing on an alien planet. A two-dimensional game with both tower defense and survival elements, Rogue Planet puts the player in control of an astronaut
+                            who has crash-landed on a foreign planet. During the day, waves of alien creatures are drawn to your ship and attempt to devour it. You must use the defenses of your ship to ward them off. During the night, you are free to
+                            explore below the surface of the planet and gather resources that can be used to upgrade your defensese are repair your ship. The goal? Survive.
+                        </p>
+                        <br>
+                        <p>This project was developed in cooperation with 3 of my classmates as a Capstone project for our IT Programming diploma at NSCC. The project was developed using the Unity game engine, and C#.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="../images/rogue_planet_3.png" class="img-fluid my-5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/rogue_planet_2.png" class="img-fluid my-5">
+                </div>
+                <div class="col-md-8 project-write-up">
+                    <h2>Development Process</h2>
+                    <p>
+                        The team I worked with on this project are all new to game development, with very little experience developing a game using Unity. We began the development by brainstorming ideas for the game, and deciding together on what we wanted to make. Once we had
+                        outlined our game and the features included, we each chose a role in the team.</p>
+                    <br>
+                    <p>My role was Project Manager. I chose to use GitHub Projects as my project management software, as it would be easy to integrate with our GitHub repository for the project. As the project manager I took on the managing of our documents
+                        and scheduling of meetings. With the aid of the team I maintained a GoogleDrive folder with documents outlining the scope of the project, as well as minutes from our meetings.
+                    </p>
+                    <br>
+
+                </div>
+                <p>We used an agile development methodology, with 2 week sprints where we would each focus on tasks that were assigned to us for the sprint. At the end of each sprint we would have a team meeting to share what we accomplished, any issues
+                    or setbacks, as well as discuss the next steps of the project.
+                </p>
+                <br>
+                <p>Though I was the project manager, I still played an active role in the software development side of the project. The primary system in the game that I was responsible for was the Player Controller system. I developed this using something
+                    called a <i>finite state machine</i>. This is a series of "states" that the player can be in, and handles the logic for what the player is able to do in each states, as well as how the player transitions between states. Some examples
+                    of states are things like "run", "idle", "duck". I also developed the player's jetpack system in conjunction with the finite state machine.</p>
+            </div>
+            <h2>Reflections</h2>
+            <article>
+                <p>This project was very enjoyable to work on, and taught me a lot. When starting this project my goals were to gain experience working as a team, and to learn how to develop a game in Unity. I can say that I definitely achieved both of those
+                    goals with this project, as well as gaining valuable experience managing a small project.</p>
+                <br>
+                <p>There were some growing pains with our team throughout the project, as none of us had worked in a team environment where everyone was on equal footing. Everyone on the team was assigned roles, but we voted on large decisions such as features
+                    that would be added to the game. Sometimes it can be hard to come to an agreement when everyone feels passionately about their opinions, but we all remained respectful of each other and were able to have productive discussions and
+                    come to a consensus on all major decisions.</p>
+                <br>
+                <p>I loved using Unity to develop a game, and this is definitely something I will continue to explore in the future as both a potential career avenue as well as a hobby.</p>
+            </article>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="d-flex flex-row justify-content-center">
+                        <a href="https://www.linkedin.com/in/ewanbaxter/" id="linkedin-link"><img src="../images/linkedin.png" alt="LinkedIn logo" id="linkedIn" class="my-1"></a>
+                        <a href="https://github.com/EwBax" id="git-link"><img src="../images/github-sign.png" alt="GitHub logo" id="gitHub" class="my-1"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column h-100 justify-content-end align-items-center">
+                        <span>Designed & built by Ewan Baxter</span>
+                        <span><a href="mailto:ewan@toughbaxter.com">ewan@toughbaxter.com</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

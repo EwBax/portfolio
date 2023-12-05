@@ -11,7 +11,7 @@
   <title>Ewan Baxter</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-light d-flex flex-column">
 
   <header class="bg-dark">
     <nav class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
@@ -23,17 +23,12 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a href="./portfolio.html"><button type="button"
+            <a href="./html/portfolio.html"><button type="button"
                 class="btn btn-outline-light m-2 nav-btn">Portfolio</button></a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light m-2 nav-btn">Resumé</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light m-2 nav-btn">Skills</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light m-2 nav-btn">Contact</button>
+            <a href="./files/EwanBaxter_Resume.pdf" download="Ewan Baxter Resume.pdf"><button type="button"
+                class="btn btn-outline-light m-2 nav-btn">Resumé</button></a>
           </li>
         </ul>
       </div>
@@ -41,7 +36,7 @@
   </header>
 
 
-  <main role="main" class="flex-shrink-0">
+  <main role="main">
 
 
     <div class="h-100 d-flex align-items-center mt-5 pt-5">
@@ -53,7 +48,7 @@
                 class="rounded-circle border border-primary flex-shrink-1" id="ewanPic">
             </div>
           </div>
-          <div class="col-md-8 mx-5 d-flex flex-column justify-content-center px-4">
+          <div class="col-md-8 d-flex flex-column justify-content-center">
             <div class="row">
               <p id="hi" class="pt-4">Hi!</p>
             </div>
@@ -70,15 +65,15 @@
           </div>
         </div>
         <div class="row mt-5 justify-content-center">
-          <div class="col-md-3 d-flex justify-content-center">
+          <div class="col-md-4 d-flex justify-content-center">
             <a href="mailto:ewan@toughbaxter.com" class="w-100">
-              <button type="button" class="btn btn-outline-dark p-3 w-100" id="contact-button"><b class="lg">Contact
+              <button type="button" class="main-btn btn btn-outline-dark p-3 w-100" id="contact-button"><b class="lg">Contact
                   Me</b></button>
             </a>
           </div>
         </div>
 
-        <div class="row my-4 justify-content-center">
+        <div class="row mt-4 justify-content-center">
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12 d-flex justify-content-center">
@@ -87,7 +82,7 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6 d-flex justify-content-center">
-                <a href="./portfolio.html"><button type="button" class="btn btn btn-outline-dark"
+                <a href="./html/portfolio.html"><button type="button" class="main-btn btn btn btn-outline-dark"
                     id="see-work-button"><b>See My Work</b></button></a>
               </div>
             </div>
@@ -101,16 +96,15 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <div class="d-flex flex-column justify-content-end">
-            <a href="https://www.linkedin.com/in/ewanbaxter/"><img src="images/linkedin.png" alt="LinkedIn logo"
-                id="linkedIn" class="my-1"></a>
-            <a href="https://github.com/EwBax"><img src="images/github-sign.png" alt="GitHub logo" id="gitHub"
-                class="my-1"></a>
-            <div id="horizontalLine"></div>
+        <div class="col-md-3">
+          <div class="d-flex flex-row justify-content-center">
+            <a href="https://www.linkedin.com/in/ewanbaxter/" id="linkedin-link"><img src="images/linkedin.png"
+                alt="LinkedIn logo" id="linkedIn" class="my-1"></a>
+            <a href="https://github.com/EwBax" id="git-link"><img src="images/github-sign.png" alt="GitHub logo"
+                id="gitHub" class="my-1"></a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="d-flex flex-column h-100 justify-content-end align-items-center">
             <span>Designed & built by Ewan Baxter</span>
             <span><a href="mailto:ewan@toughbaxter.com">ewan@toughbaxter.com</a></span>
@@ -123,8 +117,8 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 </body>
 
 
